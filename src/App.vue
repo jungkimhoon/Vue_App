@@ -39,14 +39,14 @@ export default {
     },
     removeTodo(todoItem, index){
       localStorage.removeItem(todoItem);
-      this.todoItems.splic(index, 1);
+      this.todoItems.splice(index, 1);
     }
   },
   components: {
     'TodoHeader' : TodoHeader,
     'TodoInput' : TodoInput,
     'TodoList' : TodoList,
-    'TodoFooter' : TodoFooter
+    'TodoFooter' : TodoFooter 
   }
 } 
 </script>
