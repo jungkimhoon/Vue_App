@@ -15,24 +15,11 @@
 <script>
 export default { 
 	props:['propsdata'],
-	data(){   
-		return{
-			todoItems:[]
-		}
-	},
-	created(){ 
-		if(localStorage.length > 0){
-			for(var i=0; i<localStorage.length; i++){
-				if(localStorage.key(i) != "loglevel:webpack-dev-server"){
-					this.todoItems.push(localStorage.key(i));
-				}
-			}
-		}
-	},
+
+	
 	methods:{
 		removeTodo(todoItem, index){
-			localStorage.removeItem(todoItem); 
-			this.todoItems.splice(index,1);
+			this.$emit('removeTodo', todoItem, index);
 		}
 	} 
 	
