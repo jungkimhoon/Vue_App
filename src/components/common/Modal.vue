@@ -5,9 +5,9 @@
         <div class="modal-container">
           <div class="modal-header">
             <slot name="header">
-              <!--  -->
+              <!--  --> 
             </slot>
-          </div>
+          </div>   
 
           <div class="modal-footer">
             <slot name="footer">

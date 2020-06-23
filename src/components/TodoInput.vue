@@ -21,7 +21,7 @@ import Modal from './common/Modal.vue'
 export default {
 	props: ['propsdata'],
 	data(){
-		return {
+		return { 
 			newTodoItem: '',
 			showModal: false
 		}
